@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transbordar | Equilíbrio Corpo e Mente</title>
+    <meta name="description"
+        content="Transbordar em Olinda - PE. Encontre sua paz interior através do yoga. Aulas de Ashtanga, Hatha, Vinyasa e mais.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="#inicio" class="logo">
+                <img src="logo_transbordar.png" alt="Transbordar Logo" class="logo-img">
+                <span class="logo-text">Transbordar Yoga</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#inicio" class="nav-item">Início</a>
+                <a href="#professores" class="nav-item">Professores</a>
+                <a href="#aulas" class="nav-item">Aulas</a>
+                <a href="#story" class="nav-item">Loja</a>
+                <a href="#localizacao" class="nav-item">Localização</a>
+                <a href="#depoimentos" class="nav-item">Depoimentos</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                <svg viewBox="0 0 24 24" width="30" height="30" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="#inicio" onclick="toggleMenu()">Início</a></li>
+            <li><a href="#professores" onclick="toggleMenu()">Professores</a></li>
+            <li><a href="#aulas" onclick="toggleMenu()">Aulas</a></li>
+            <li><a href="#story" onclick="toggleMenu()">Loja</a></li>
+            <li><a href="#localizacao" onclick="toggleMenu()">Localização</a></li>
+            <li><a href="#depoimentos" onclick="toggleMenu()">Depoimentos</a></li>
+            <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="carousel-container">
+            <div class="carousel-slide active" style="background-image: url('assets/03_ajustada.png')"></div>
+            <div class="carousel-slide" style="background-image: url('assets/02_ajustada.png')"></div>
+            <div class="carousel-slide" style="background-image: url('assets/IMG_2443.jpeg')"></div>
+            <div class="carousel-slide" style="background-image: url('assets/praticando_yoga.png')"></div>
+            <div class="carousel-slide" style="background-image: url('assets/2.png')"></div>
+            <div class="carousel-slide" style="background-image: url('assets/IMG_2441.jpeg')"></div>
+            <div class="carousel-slide" style="background-image: url('assets/IMG_2412.jpeg')"></div>
+        </div>
+        <div class="hero-overlay">
+            <div class="hero-content fade-in">
+                <h1>Seu estúdio de Yoga favorito!</h1>
+                <p>Você encontrou o que procura!</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Autoconhecimento Section -->
+    <section class="section self-knowledge" id="autoconhecimento">
+        <div class="container self-knowledge-grid">
+            <div class="self-knowledge-image-container fade-in">
+                <div class="flip-card" id="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/carta_transbordar.png" alt="Carta Transbordar" class="flip-img">
+                        </div>
+                        <!--<div class="flip-card-back">
+                            <img src="assets/autoconhecimento.png" alt="Autoconhecimento" class="flip-img">
+                        </div>-->
+                        <div class="flip-card-back">
+                            <img src="assets/saude.png" alt="Autoconhecimento" class="flip-img">
+                        </div>
+                    </div>
+                </div>
+                <p class="flip-hint"><i class="fas fa-sync-alt"></i> Clique na imagem acima para girar</p>
+            </div>
+            <div class="self-knowledge-content fade-in">
+                <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">Autoconhecimento</h2>
+                <p class="section-text">
+                    O yoga é uma prática milenar que vai muito além dos exercícios físicos, funcionando como uma
+                    ferramenta poderosa para o autoconhecimento e o controle emocional. Ao integrar corpo, mente e
+                    respiração, ele permite que o praticante se volte para dentro, observando seus pensamentos, emoções
+                    e padrões de comportamento, o que promove uma maior compreensão de si mesmo.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="depoimentos">
+        <div class="container">
+            <h2 class="section-title fade-in">O lugar que você procura, existe!</h2>
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card fade-in">
+                    <img src="assets/roberta_alvarenga.jpeg" alt="Roberta Alvarenga" class="testimonial-img">
+                    <h3 class="testimonial-name">Roberta Alvarenga</h3>
+                    <p class="testimonial-text">"Experiência maravilhosa! O estúdio é acolhedor, cheio de boas energias,
+                        e as aulas são transformadoras. Saí me sentindo mais leve, centrada e com o corpo renovado. Dá
+                        pra ver o carinho e a dedicação em cada detalhe."</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card fade-in">
+                    <img src="https://ui-avatars.com/api/?name=Italo+Carvalho&background=B8C7B0&color=fff"
+                        alt="Italo Carvalho" class="testimonial-img">
+                    <h3 class="testimonial-name">Italo Carvalho</h3>
+                    <p class="testimonial-text">"Se vc chegou até aqui, buscando um local seguro e acolhedor, te garanto
+                        que essa será a tua casinha. Confia e entrega!."</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card fade-in">
+                    <img src="assets/Andrea_Dias.jpeg" alt=" Andrea Dias" class="testimonial-img">
+                    <h3 class="testimonial-name"> Andrea Dias</h3>
+                    <p class="testimonial-text">
+                        "Bom dia!<br>
+                        Eu ameiiiiiii<br>
+                        Foi incrível, superou minhas expectativas.<br>
+                        Eu sou sedentária desde que nasci<br>
+                        Saí de lá suada kkk!<br>
+                        Não gosto de academia, porém na aula de yoga percebi
+                        que mexe com o corpo todo.<br>
+                        Amei, amei! Só assim pra sair do sedentarismo."
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <!-- Extra Testimonials -->
+                <div class="testimonial-card fade-in">
+                    <img src="assets/mayra_rocha.jpeg" alt="Mayra Rocha" class="testimonial-img">
+                    <h3 class="testimonial-name">Mayra Rocha</h3>
+                    <p class="testimonial-text">
+                        "Eu ameiii<br>
+                        Me senti muito bem<br>
+                        Achei o espaço super agradável."</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <img src="assets/jessica_da_silva.jpeg" alt="Jessica da Silva" class="testimonial-img">
+                    <h3 class="testimonial-name">Jessica da Silva</h3>
+                    <p class="testimonial-text">
+                        "Foi uma experiência muito boa pra mim.<br>
+                        Me trouxe uma sensação de calma e equilíbrio que eu tava precisando.<br>
+                        Saí me sentindo leve, relaxada 😌<br>
+                        Quero continuar 🙏."</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <img src="assets/Amanda_Dantas.jpeg" alt="Amanda Dantas" class="testimonial-img">
+                    <h3 class="testimonial-name">Amanda Dantas</h3>
+                    <p class="testimonial-text">
+                        "Bom dia!<br>
+                        Eu ameei<br>
+                        Não sabia que meu corpo e mente<br>
+                        estavam precisando tanto dessa<br>
+                        aula."</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professors Section -->
+    <section class="section professors" id="professores">
+        <div class="container">
+            <h2 class="section-title fade-in">Professores</h2>
+            <div class="professors-grid">
+                <!-- Cris Queiroz -->
+                <div class="professor-item fade-in">
+                    <div class="professor-photo-container">
+                        <img src="assets/prof_cris.jpg" alt="Cris Queiroz" class="professor-photo">
+                    </div>
+                    <div class="professor-info-card">
+                        <h3 class="professor-name">Cris Queiroz</h3>
+                        <p class="professor-handle">@crisqueirozyoga</p>
+                    </div>
+                </div>
+                <!-- Ellen Maclen -->
+                <div class="professor-item fade-in">
+                    <div class="professor-photo-container">
+                        <img src="assets/prof_ellen.jpg" alt="Ellen Maclen" class="professor-photo">
+                    </div>
+                    <div class="professor-info-card">
+                        <h3 class="professor-name">Ellen Maclen</h3>
+                        <p class="professor-handle">@yogacomellen</p>
+                    </div>
+                </div>
+                <!-- Filipe Lyrios -->
+                <div class="professor-item fade-in">
+                    <div class="professor-photo-container">
+                        <img src="assets/prof_felipe.jpg" alt="Filipe Lyrios" class="professor-photo">
+                    </div>
+                    <div class="professor-info-card">
+                        <h3 class="professor-name">Filipe Lyrios</h3>
+                        <p class="professor-handle">@filipelyrios</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="aulas">
+        <div class="container">
+            <h2 class="section-title fade-in">Encontre a sua aula</h2>
+            <div class="classes-grid">
+                <!-- 12 Items -->
+                <div class="class-item fade-in">
+                    <div class="class-img-container">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=200&h=200&auto=format&fit=crop"
+                            alt="Ashtanga Vinyasa" class="class-img">
+                    </div>
+                    <p class="class-name">Ashtanga Vinyasa</p>
+                </div>
+                <div class="class-item fade-in">
+                    <div class="class-img-container">
+                        <img src="https://anaissa.com/cdn/shop/articles/hatha-yoga.jpg?v=1729587530&width=2048"
+                            alt="Hatha Yoga" class="class-img">
+                    </div>
+                    <p class="class-name">Hatha Yoga</p>
+                </div>
+                <div class="class-item fade-in">
+                    <div class="class-img-container">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=200&h=200&auto=format&fit=crop"
+                            alt="Hatha Flow" class="class-img">
+                    </div>
+                    <p class="class-name">Hatha Flow</p>
+                </div>
+                <div class="class-item fade-in">
+                    <div class="class-img-container">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="Iyengar Yoga" class="class-img">
+                    </div>
+                    <p class="class-name">Iyengar Yoga</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store/Story Section -->
+    <section class="section story" id="story">
+        <div class="container">
+            <h2 class="section-title fade-in">Nossa Loja</h2>
+            <p class="section-subtitle fade-in">Leve a essência do Transbordar com você. Conheça nossa camisa
+                exclusiva.</p>
+
+            <div class="story-container fade-in">
+                <div class="product-carousel">
+                    <div class="carousel-inner">
+                        <img src="assets/camisa_branca.png" alt="Camisa Transbordar - Frente"
+                            class="product-img active">
+                        <img src="assets/camisa_marrom.png" alt="Camisa Transbordar - Costas" class="product-img">
+                        <img src="assets/camisa_rosa.png" alt="Camisa Transbordar - Costas" class="product-img">
+                        <img src="assets/camisa_verde.png" alt="Camisa Transbordar - Costas" class="product-img">
+                    </div>
+                    <button class="carousel-nav prev" aria-label="Anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-nav next" aria-label="Próximo">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="product-details">
+                    <h3>Camisa Oversized Premium</h3>
+                    <p class="product-price">R$ 89,90</p>
+                    <p class="product-description">
+                        Desenvolvida com algodão sustentável, nossa camisa oferece o máximo conforto para sua
+                        prática de yoga ou para o dia a dia.
+                    </p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 100% Algodão Orgânico</li>
+                        <li><i class="fas fa-check"></i> Estampa em silk de alta durabilidade</li>
+                        <li><i class="fas fa-check"></i> Modelagem unissex</li>
+                    </ul>
+                    <button class="btn-primary"
+                        onclick="window.open('https://wa.me/5581989304727?text=Olá! Tenho interesse na camisa Transbordar.', '_blank')">
+                        Quero a minha
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mug Product -->
+            <div class="story-container fade-in" style="margin-top: 60px;">
+                <div class="product-carousel">
+                    <div class="carousel-inner">
+                        <img src="assets/caneca_transbordar.png" alt="Caneca Transbordar" class="product-img active">
+                        <img src="assets/caneca_transbordar_vidro.png" alt="Caneca Transbordar - Lado"
+                            class="product-img">
+                    </div>
+                    <button class="carousel-nav prev" aria-label="Anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-nav next" aria-label="Próximo">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="product-details">
+                    <h3>Caneca Transbordar</h3>
+                    <p class="product-price">R$ 49,90</p>
+                    <p class="product-description">
+                        Com a estampa "O lugar que você procura, existe", nossa caneca é perfeita para seu café,
+                        chá
+                        ou qualquer momento de pausa e equilíbrio.
+                    </p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Cerâmica de alta qualidade</li>
+                        <li><i class="fas fa-check"></i> 325ml de capacidade</li>
+                        <li><i class="fas fa-check"></i> Pode ser usada no micro-ondas</li>
+                    </ul>
+                    <button class="btn-primary"
+                        onclick="window.open('https://wa.me/5581989304727?text=quero minha caneca transbordar', '_blank')">
+                        Quero a minha
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aulões Externos Section -->
+    <section class="section external-classes" id="auloes">
+        <div class="container">
+            <h2 class="section-title fade-in">Aulões Externos</h2>
+            <p class="section-subtitle fade-in">Levamos a experiência do Transbordar para além do estúdio. Participamos
+                de eventos, retiros e encontros ao ar livre.</p>
+
+            <div class="external-classes-grid">
+                <div class="external-class-card fade-in">
+                    <div class="external-class-img">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=400&auto=format&fit=crop"
+                            alt="Aulão na Praia">
+                    </div>
+                    <div class="external-class-content">
+                        <h3>Aulões na Praia</h3>
+                        <p>Pratique yoga com a natureza. Nossos aulões na praia de Olinda proporcionam uma experiência
+                            única de conexão com o mar e o sol.</p>
+                        <span class="external-class-tag"><i class="fas fa-sun"></i> Ao ar livre</span>
+                    </div>
+                </div>
+
+                <div class="external-class-card fade-in">
+                    <div class="external-class-img">
+                        <img src="https://images.unsplash.com/photo-1545389336-cf090694435e?q=80&w=400&auto=format&fit=crop"
+                            alt="Retiros">
+                    </div>
+                    <div class="external-class-content">
+                        <h3>Retiros e Encontros</h3>
+                        <p>Experiências transformadoras de final de semana com práticas intensivas, meditação e
+                            vivências em comunidade.</p>
+                        <span class="external-class-tag"><i class="fas fa-mountain"></i> Imersão</span>
+                    </div>
+                </div>
+
+                <div class="external-class-card fade-in">
+                    <div class="external-class-img">
+                        <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?q=80&w=400&auto=format&fit=crop"
+                            alt="Eventos Corporativos">
+                    </div>
+                    <div class="external-class-content">
+                        <h3>Eventos Corporativos</h3>
+                        <p>Levamos yoga e bem-estar para empresas. Ideal para workshops, dias de integração e eventos
+                            corporativos.</p>
+                        <span class="external-class-tag"><i class="fas fa-building"></i> Corporativo</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="external-cta fade-in">
+                <p>Quer levar o Transbordar para seu evento?</p>
+                <button class="btn-primary"
+                    onclick="window.open('https://wa.me/5581989304727?text=Olá! Tenho interesse em um aulão externo.', '_blank')">
+                    Fale conosco
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Próximos Eventos Section -->
+    <section class="section upcoming-events" id="eventos">
+        <div class="container">
+            <h2 class="section-title fade-in">Próximos Aulões</h2>
+            <p class="section-subtitle fade-in">Não fique de fora! Veja nossos próximos eventos e garanta sua vaga.</p>
+
+            <div class="events-timeline">
+                <div class="event-item fade-in">
+                    <div class="event-date">
+                        <span class="event-day">15</span>
+                        <span class="event-month">Abr</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Aulão na Praia de Olinda</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Praia de Olinda</p>
+                        <p><i class="fas fa-clock"></i> 7h00 - 8h30</p>
+                        <span class="event-status vagas">Vagas disponíveis</span>
+                    </div>
+                    <button class="btn-secondary"
+                        onclick="window.open('https://wa.me/5581989304727?text=Quero participar do aulão na praia!', '_blank')">
+                        Inscrever-se
+                    </button>
+                </div>
+
+                <div class="event-item fade-in">
+                    <div class="event-date">
+                        <span class="event-day">22</span>
+                        <span class="event-month">Abr</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Workshop: Introdução ao Yoga</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Transbordar Estúdio</p>
+                        <p><i class="fas fa-clock"></i> 9h00 - 12h00</p>
+                        <span class="event-status vagas">Vagas disponíveis</span>
+                    </div>
+                    <button class="btn-secondary"
+                        onclick="window.open('https://wa.me/5581989304727?text=Quero participar do workshop!', '_blank')">
+                        Inscrever-se
+                    </button>
+                </div>
+
+                <div class="event-item fade-in">
+                    <div class="event-date">
+                        <span class="event-day">05</span>
+                        <span class="event-month">Mai</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Retiro de Meio de Ano</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Porto de Galinhas</p>
+                        <p><i class="fas fa-clock"></i> Weekend</p>
+                        <span class="event-status limitado">Vagas limitadas</span>
+                    </div>
+                    <button class="btn-secondary"
+                        onclick="window.open('https://wa.me/5581989304727?text=Tenho interesse no retiro de meio de ano!', '_blank')">
+                        Inscrever-se
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Location Section -->
+    <section class="section location-section" id="localizacao">
+        <div class="container">
+            <h2 class="section-title fade-in">Nossa Localização</h2>
+            <div class="location-grid fade-in">
+                <div class="location-info">
+                    <div class="address-card">
+                        <div class="address-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="address-details">
+                            <h3>Endereço</h3>
+                            <p>Galeria Ana Maria</p>
+                            <p>R. Manoel Graciliano de Souza, 1020 - Sala 8</p>
+                            <p>Jardim Atlântico, Olinda - PE</p>
+                            <p>CEP: 53140-160</p>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=-7.971541434515129,-34.8372901"
+                        target="_blank" class="btn-primary"
+                        style="display: inline-block; margin-top: 1.5rem; text-align: center;">
+                        <i class="fas fa-external-link-alt"></i> Ver no Google Maps
+                    </a>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.346387034447!2d-34.83947872412803!3d-7.971541434515129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNTgnMTcuNiJTIDM0wrA1MCcxNC4xIlc!5e0!3m2!1spt-BR!2sbr!4v1711650000000!5m2!1spt-BR!2sbr"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <img src="assets/logo_footer.png" alt="Transbordar Logo" class="footer-logo-img">
+                </div>
+                <p class="footer-description">
+                    Dedicado a oferecer equilíbrio corpo e mente através da prática do yoga, buscando sempre a
+                    melhor conexão e bem-estar para cada aluno.
+                </p>
+                <div class="social-icons">
+                    <!-- <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a> -->
+                    <!-- <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a> -->
+                    <!-- <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a> -->
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Atalhos</h3>
+                <ul class="footer-links">
+                    <li><a href="#inicio"><i class="fas fa-chevron-right"></i> Início</a></li>
+                    <li><a href="#professores"><i class="fas fa-chevron-right"></i> Professores</a></li>
+                    <li><a href="#aulas"><i class="fas fa-chevron-right"></i> Aulas</a></li>
+                    <li><a href="#story"><i class="fas fa-chevron-right"></i> Loja</a></li>
+                    <li><a href="#localizacao"><i class="fas fa-chevron-right"></i> Localização</a></li>
+                    <li><a href="#depoimentos"><i class="fas fa-chevron-right"></i> Depoimentos</a></li>
+                    <li><a href="#contato"><i class="fas fa-chevron-right"></i> Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h3 class="footer-title">Contato</h3>
+                <div class="contact-info">
+                    <p><i class="far fa-envelope"></i> contato@transbordaryoga.com.br</p>
+                    <p><i class="fab fa-whatsapp"></i> +55 81 98930-4727</p>
+                    <p><i class="fab fa-instagram"></i> @transbordaryogaestudio</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Desenvolvido por <a href="http://www.patrickataide.com.br"
+                        target="_blank">www.patrickataide.com.br</a></p>
+                <p>Automação e Desenvolvimento Empresarial.</p>
+                <p><a href="https://wa.me/5581989304727?text=Vim%20do%20site%20transbordarestudio.com.br%2C%20quero%20saber%20mais%20informa%C3%A7%C3%B5es."
+                        target="_blank">Contato - 55 81 98930-4727 <i class="fab fa-whatsapp"></i></a></p>
+                <div class="footer-copy">
+                    &copy; 2026 Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Widget -->
+    <div id="whatsapp-widget" class="whatsapp-widget">
+        <div id="whatsapp-popup" class="whatsapp-popup">
+            <div class="whatsapp-popup-header">
+                <p>Olá! Clique aqui e um de nossos representantes entrará em contato com você o mais breve
+                    possível.
+                </p>
+                <button id="whatsapp-close" class="whatsapp-close">&times;</button>
+            </div>
+            <div class="whatsapp-popup-body" id="whatsapp-body">
+                <div class="whatsapp-logo-container">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="whatsapp-text">
+                    <span class="whatsapp-brand-small">Transbordar Estúdio</span>
+                    <span class="whatsapp-brand-bold">Fale conosco !</span>
+                </div>
+            </div>
+        </div>
+        <button id="whatsapp-btn" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Converse via WhatsApp
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

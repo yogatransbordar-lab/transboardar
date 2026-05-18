@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transbordar | Equilíbrio Corpo e Mente</title>
+    <meta name="description"
+        content="Transbordar em Olinda - PE. Encontre sua paz interior através do yoga. Aulas de Ashtanga, Hatha, Vinyasa e mais.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="#inicio" class="logo">
+                <img src="logo_transbordar.png" alt="Transbordar Logo" class="logo-img">
+                <span class="logo-text">Transbordar Yoga</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#inicio" class="nav-item">Início</a>
+                <a href="#professores" class="nav-item">Professores</a>
+                <a href="#aulas" class="nav-item">Aulas</a>
+                <a href="#story" class="nav-item">Loja</a>
+                <a href="#localizacao" class="nav-item">Localização</a>
+                <a href="#depoimentos" class="nav-item">Depoimentos</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                <svg viewBox="0 0 24 24" width="30" height="30" stroke="currentColor" stroke-width="2" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="#inicio" onclick="toggleMenu()">Início</a></li>
+            <li><a href="#professores" onclick="toggleMenu()">Professores</a></li>
+            <li><a href="#aulas" onclick="toggleMenu()">Aulas</a></li>
+            <li><a href="#story" onclick="toggleMenu()">Loja</a></li>
+            <li><a href="#localizacao" onclick="toggleMenu()">Localização</a></li>
+            <li><a href="#depoimentos" onclick="toggleMenu()">Depoimentos</a></li>
+            <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="carousel-container">
+            <div class="carousel-slide active" style="background-image: url('assets/03_ajustada.png')"></div>
+            <div class="carousel-slide" style="background-image: url('assets/02_ajustada.png')"></div>
+            <div class="carousel-slide" style="background-image: url('assets/IMG_2443.jpeg')"></div>
+            <div class="carousel-slide" style="background-image: url('assets/praticando_yoga.png')"></div>
+            <div class="carousel-slide" style="background-image: url('assets/2.png')"></div>
+            <div class="carousel-slide" style="background-image: url('assets/IMG_2441.jpeg')"></div>
+            <div class="carousel-slide" style="background-image: url('assets/IMG_2412.jpeg')"></div>
+        </div>
+        <div class="hero-overlay">
+            <div class="hero-content fade-in">
+                <h1>Seu estúdio de Yoga favorito!</h1>
+                <p>Você encontrou o que procura!</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Autoconhecimento Section -->
+    <section class="section self-knowledge" id="autoconhecimento">
+        <div class="container self-knowledge-grid">
+            <div class="self-knowledge-image-container fade-in">
+                <div class="flip-card" id="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/carta_transbordar.png" alt="Carta Transbordar" class="flip-img">
+                        </div>
+                        <!--<div class="flip-card-back">
+                            <img src="assets/autoconhecimento.png" alt="Autoconhecimento" class="flip-img">
+                        </div>-->
+                        <div class="flip-card-back">
+                            <img src="assets/saude.png" alt="Autoconhecimento" class="flip-img">
+                        </div>
+                    </div>
+                </div>
+                <p class="flip-hint"><i class="fas fa-sync-alt"></i> Clique na imagem acima para girar</p>
+            </div>
+            <div class="self-knowledge-content fade-in">
+                <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">Autoconhecimento</h2>
+                <p class="section-text">
+                    O yoga é uma prática milenar que vai muito além dos exercícios físicos, funcionando como uma
+                    ferramenta poderosa para o autoconhecimento e o controle emocional. Ao integrar corpo, mente e
+                    respiração, ele permite que o praticante se volte para dentro, observando seus pensamentos, emoções
+                    e padrões de comportamento, o que promove uma maior compreensão de si mesmo.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="depoimentos">
+        <div class="container">
+            <h2 class="section-title fade-in">O lugar que você procura, existe!</h2>
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card fade-in">
+                    <img src="assets/roberta_alvarenga.jpeg" alt="Roberta Alvarenga" class="testimonial-img">
+                    <h3 class="testimonial-name">Roberta Alvarenga</h3>
+                    <p class="testimonial-text">"Experiência maravilhosa! O estúdio é acolhedor, cheio de boas energias,
+                        e as aulas são transformadoras. Saí me sentindo mais leve, centrada e com o corpo renovado. Dá
+                        pra ver o carinho e a dedicação em cada detalhe."</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card fade-in">
+                    <img src="assets/daniel_melo.jpeg" alt="Daniel Melo" class="testimonial-img">
+                    <h3 class="testimonial-name">Daniel Melo</h3>
+                    <p class="testimonial-text">
+                        "Professoras, agradeço demais por ter <br>
+                        tido a minha primeira experiência da vida <br>
+                        com yoga atrávez das aulas de vocês. <br>
+                        Acredito que as coisas da vida acontecem <br>
+                        com um propósito e hoje consigo enxergar <br>
+                        com mais clareza a beleza da vida, graças ao Transbordar"</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card fade-in">
+                    <img src="assets/Andrea_Dias.jpeg" alt=" Andrea Dias" class="testimonial-img">
+                    <h3 class="testimonial-name"> Andrea Dias</h3>
+                    <p class="testimonial-text">
+                        "Foi incrível, superou minhas expectativas.<br>
+                        Eu sou sedentária desde que nasci<br>
+                        Saí de lá suada kkk!<br>
+                        Não gosto de academia, porém na aula de yoga percebi
+                        que mexe com o corpo todo.<br>
+                        Amei, amei! Só assim pra sair do sedentarismo."
+                    </p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <!-- Extra Testimonials -->
+                <div class="testimonial-card fade-in">
+                    <img src="assets/mayra_rocha.jpeg" alt="Mayra Rocha" class="testimonial-img">
+                    <h3 class="testimonial-name">Mayra Rocha</h3>
+                    <p class="testimonial-text">
+                        "Eu ameiii<br>
+                        Me senti muito bem<br>
+                        Achei o espaço super agradável."</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <img src="assets/jessica_da_silva.jpeg" alt="Jessica da Silva" class="testimonial-img">
+                    <h3 class="testimonial-name">Jessica da Silva</h3>
+                    <p class="testimonial-text">
+                        "Foi uma experiência muito boa pra mim.<br>
+                        Me trouxe uma sensação de calma e equilíbrio que eu tava precisando.<br>
+                        Saí me sentindo leve, relaxada 😌<br>
+                        Quero continuar 🙏."</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <img src="assets/Amanda_Dantas.jpeg" alt="Amanda Dantas" class="testimonial-img">
+                    <h3 class="testimonial-name">Amanda Dantas</h3>
+                    <p class="testimonial-text">
+                        "Não sabia que meu corpo e mente<br>
+                        estavam precisando tanto dessa<br>
+                        aula."</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professors Section -->
+    <section class="section professors" id="professores">
+        <div class="container">
+            <h2 class="section-title fade-in">Professores</h2>
+            <div class="professors-grid">
+                <!-- Cris Queiroz -->
+                <div class="professor-item fade-in">
+                    <div class="professor-photo-container">
+                        <img src="assets/prof_cris.jpg" alt="Cris Queiroz" class="professor-photo">
+                    </div>
+                    <div class="professor-info-card">
+                        <h3 class="professor-name">Cris Queiroz</h3>
+                        <p class="professor-handle">Conduz aulas dinâmicas onde as posturas são sincronizadas com a
+                            respiração. É uma professora muito sensível e perceptiva, suas aulas são assertivas,
+                            intuitivas e direcionadas para todos os alunos presentes.</p>
+                        <p class="professor-handle">@crisqueirozyoga</p>
+                    </div>
+                </div>
+                <!-- Ellen Maclen 
+                <div class="professor-item fade-in">
+                    <div class="professor-photo-container">
+                        <img src="assets/prof_ellen.jpg" alt="Ellen Maclen" class="professor-photo">
+                    </div>
+                    <div class="professor-info-card">
+                        <h3 class="professor-name">Ellen Maclen</h3>
+                        <p class="professor-handle">A professora conduz com leveza e maestria uma aula de yoga que traz
+                            firmeza e tranquilidade ao mesmo tempo. Aquela aula perfeita para harmonizar e equilibrar.
+                        </p>
+                        <p class="professor-handle">@yogacomellen</p>
+                    </div>
+                </div>-->
+                <!-- Filipe Lyrios -->
+                <div class="professor-item fade-in">
+                    <div class="professor-photo-container">
+                        <img src="assets/prof_felipe.jpg" alt="Filipe Lyrios" class="professor-photo">
+                    </div>
+                    <div class="professor-info-card">
+                        <h3 class="professor-name">Filipe Lyrios</h3>
+                        <p class="professor-handle">Sabe aqueles dias que estamos precisando de mais vigor e energia na
+                            vida? O professor faz a guiança de uma aula de yoga mais desafiante e energética, com a
+                            intenção de estimular sua força interior.</p>
+                        <p class="professor-handle">@filipelyrios</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* GRID */
+        .classes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        /* CARD */
+        .class-item {
+            cursor: pointer;
+            border-radius: 15px;
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .class-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .class-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* MODAL */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+        }
+
+        .modal-content {
+            background: #fff;
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 15px;
+            animation: fadeIn 0.4s ease;
+            text-align: left;
+        }
+
+        .modal h3 {
+            margin-bottom: 15px;
+        }
+
+        .modal p {
+            line-height: 1.6;
+        }
+
+        .close {
+            float: right;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        /* ANIMAÇÃO */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+
+    <section class="section" id="aulas">
+        <div class="container">
+            <h2 class="section-title">Encontre a sua aula</h2>
+
+            <div class="classes-grid">
+
+                <div class="class-item" onclick="openModal('vinyasa')">
+                    <img src="assets/VINYASA YOGA.jpeg" class="class-img">
+                    <p>Vinyasa Yoga</p>
+                    <button onclick="openModal('vinyasa')" class="btn-ver-mais">Ver mais</button>
+                </div>
+
+                <div class="class-item" onclick="openModal('hatha')">
+                    <img src="assets/HATHA YOGA.jpeg" class="class-img">
+                    <p>Hatha Yoga</p>
+                    <button onclick="openModal('hatha')" class="btn-ver-mais">Ver mais</button>
+                </div>
+
+                <div class="class-item" onclick="openModal('power')">
+                    <img src="assets/VINYASA FLOW POWER.jpeg" class="class-img">
+                    <p>Vinyasa Flow Power</p>
+                    <button onclick="openModal('power')" class="btn-ver-mais">Ver mais</button>
+                </div>
+
+                <div class="class-item" onclick="openModal('iyengar')">
+                    <img src="assets/YN YOGA.jpeg" class="class-img">
+                    <p>Yn Yoga</p>
+                    <button onclick="openModal('iyengar')" class="btn-ver-mais">Ver mais</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <script>
+        const aulas = {
+            vinyasa: {
+                titulo: "Vinyasa Yoga",
+                texto: `É quando a respiração vira guia e o corpo aprende a confiar no fluxo.
+
+                        Não é sobre acertar a postura perfeita, é sobre se permitir mover — por dentro e por fora — com presença.
+
+                        É uma dança suave entre esforço e entrega, onde cada movimento encontra o ar que entra e sai.
+
+                        No vinyasa, a gente não controla tanto — a gente escuta. E, aos poucos, vai voltando pra casa: pro corpo, pro agora, para aquilo que é leve e verdadeiro dentro da gente.`
+            },
+            hatha: {
+                titulo: "Hatha Yoga",
+                texto: `Hatha yoga é o convite de desacelerar e sustentar.
+
+                        É quando o corpo pede presença mais profunda, e a gente aprende a ficar — mesmo quando dá vontade de sair.
+
+                        Não é sobre fazer muito, é sobre sentir mais.
+
+                        Cada postura vira um espaço de escuta, onde o silêncio também fala e o tempo perde a pressa.
+
+                        O desafio do Hatha Yoga está em permanecer nas posturas FIRME E FORTE.`
+            },
+            power: {
+                titulo: "Vinyasa Flow Power",
+                texto: `Vinyasa flow power, é o fogo em movimento.
+
+                        É quando o corpo acorda com intensidade e a respiração sustenta esse pulso vivo, firme, presente.
+
+                        Não é só força — é presença em ação.
+
+                        É atravessar o desafio sem se endurecer, é suar e, ainda assim, se escutar.
+
+                        Cada sequência te empurra um pouquinho além… mas também te lembra de voltar pra si.`
+            },
+            iyengar: {
+                titulo: "Yn Yoga",
+                texto: `Yin Yoga é um convite para desacelerar e sentir.
+
+                        É uma prática mais lenta e profunda, onde as posturas são sustentadas por alguns minutos,
+                        
+                        permitindo que o corpo relaxe de verdade e que camadas mais sutis sejam acessadas
+
+                        — como os tecidos profundos (fáscias) e as emoções guardadas.
+
+                        No Yin, menos é mais: menos pressa, menos controle, menos tensão.
+
+                        E, aos poucos, mais presença, mais escuta, mais conexão com quem você é.
+
+                        Uma pausa consciente em meio ao caos — simples, intensa e transformadora.`
+            },
+            auloes: {
+                titulo: "Aulões Externos",
+                texto: `Aulões de yoga ao ar livre são uma experiência completa: movimento, respiração e conexão em um cenário que potencializa tudo.
+
+                       São encontros para sair da rotina, recarregar a energia e viver o yoga de forma leve e coletiva — sem perder a profundidade.
+
+                       No Transbordar Yoga, cada aulão é um convite para se cuidar, se fortalecer e viver o agora com presença.
+
+                       Simples, direto e transformador.
+
+                       Inscrições abertas em breve, fica de olho!`
+            }
+        };
+
+        function openModal(tipo) {
+            document.getElementById("modal-title").innerText = aulas[tipo].titulo;
+            document.getElementById("modal-text").innerText = aulas[tipo].texto;
+            document.getElementById("modal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+
+        // fechar clicando fora
+        window.onclick = function (e) {
+            if (e.target == document.getElementById("modal")) {
+                closeModal();
+            }
+        }
+    </script>
+
+    <!-- Store/Story Section -->
+    <section class="section story" id="story">
+        <div class="container">
+            <h2 class="section-title fade-in">Nossa Loja</h2>
+            <p class="section-subtitle fade-in">Leve a essência do Transbordar com você. Conheça nossa camisa
+                exclusiva.</p>
+
+            <div class="story-container fade-in">
+                <div class="product-carousel">
+                    <div class="carousel-inner">
+                        <img src="assets/camisa_azul.png" alt="Camisa Transbordar - Azul" class="product-img active">
+                        <img src="assets/camisa_branca.png" alt="Camisa Transbordar - Branca" class="product-img">
+                        <img src="assets/camisa_marrom.png" alt="Camisa Transbordar - Marrom" class="product-img">
+                        <img src="assets/camisa_rosa.png" alt="Camisa Transbordar - Rosa" class="product-img">
+                        <img src="assets/camisa_verde.png" alt="Camisa Transbordar - Verde" class="product-img">
+                        <img src="assets/camisa_amarelo_mostarda.png" alt="Camisa Transbordar - Mostarda"
+                            class="product-img">
+                        <img src="assets/camisa_preta.png" alt="Camisa Transbordar - Preta" class="product-img">
+                    </div>
+                    <button class="carousel-nav prev" aria-label="Anterior">''
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-nav next" aria-label="Próximo">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="product-details">
+                    <h3>Camisa Oversized Premium</h3>
+                    <p class="product-price">R$ 99,90</p>
+                    <p class="product-description">
+                        Desenvolvida com algodão sustentável, nossa camisa oferece o máximo conforto para sua
+                        prática de yoga ou para o dia a dia.
+                    </p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> 100% Algodão Orgânico</li>
+                        <li><i class="fas fa-check"></i> Estampa em silk de alta durabilidade</li>
+                        <li><i class="fas fa-check"></i> Modelagem unissex</li>
+                    </ul>
+                    <button class="btn-primary"
+                        onclick="window.open('https://wa.me/5581982228973?text=Olá! Tenho interesse na camisa Transbordar.', '_blank')">
+                        Quero a minha
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mug Product -->
+            <div class="story-container fade-in" style="margin-top: 60px;">
+                <div class="product-carousel">
+                    <div class="carousel-inner">
+                        <img src="assets/caneca_transbordar.png" alt="Caneca Transbordar" class="product-img active">
+                        <img src="assets/caneca_transbordar_vidro.png" alt="Caneca Transbordar - Lado"
+                            class="product-img">
+                    </div>
+                    <button class="carousel-nav prev" aria-label="Anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-nav next" aria-label="Próximo">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="product-details">
+                    <h3>Caneca Transbordar</h3>
+                    <p class="product-price">R$ 49,90</p>
+                    <p class="product-description">
+                        Com a estampa "O lugar que você procura, existe", nossa caneca é perfeita para seu café,
+                        chá
+                        ou qualquer momento de pausa e equilíbrio.
+                    </p>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Cerâmica de alta qualidade</li>
+                        <li><i class="fas fa-check"></i> 325ml de capacidade</li>
+                        <li><i class="fas fa-check"></i> Pode ser usada no micro-ondas</li>
+                    </ul>
+                    <button class="btn-primary"
+                        onclick="window.open('https://wa.me/5581982228973?text=Quero minha caneca transbordar', '_blank')">
+                        Quero a minha
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aulões Externos Section -->
+    <section class="section" id="auloes">
+        <div class="container">
+            <h2 class="section-title">Aulões Externos</h2>
+
+            <div class="classes-grid">
+
+                <div class="class-item" onclick="openModal('auloes')">
+                    <img src="assets/IMG_2412.jpeg" class="class-img">
+                    <img src="assets/IMG_2441.jpeg" class="class-img">
+                    <img src="assets/IMG_2443.jpeg" class="class-img">
+                    <img src="assets/praticando_yoga.png" class="class-img">
+                    <p></p>
+                    <button onclick="openModal('auloes')" class="btn-ver-mais">Ver mais</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Viagem Section-->
+    <!-- Viagem Section-->
+    <section class="section retreat" id="retiro">
+        <div class="container">
+
+            <h1 class="retreat-content fade-in">
+                Viagens & Retiros
+            </h1><br>
+
+            <div class="retreat-content fade-in">
+
+                <p>
+                    São pausas com propósito. Um tempo pra sair do automático,
+                    desacelerar de verdade e se reconectar com o que importa — dentro e fora.
+                </p>
+
+                <p>
+                    Tudo pensado pra você voltar diferente… Mais presente, mais leve, mais inteiro.
+                </p>
+
+                <p>
+                    Aqui no Transbordar Yoga, cada retiro é um mergulho. Em lugares que inspiram,
+                    com uma energia que acolhe e transforma. Um convite claro: se priorizar também é necessário.
+                </p><br>
+
+                <h2 class="highlight">
+                    Próxima viagem: CACHOEIRAS DE BONITO, PERNAMBUCO 🌿
+                </h2><br>
+
+                <h3 class="retreat-title">YOGA NA CACHOEIRA</h3>
+
+                <p class="retreat-subtitle">
+                    TRANSBORDAR EM BONITO 😍
+                </p>
+
+                <p>
+                    Uma viagem gostosinha de 1 dia, um delicioso bate e volta,
+                    para você voltar diferente e se sentir renovado.
+                </p>
+
+                <p class="retreat-date">( 31/05/2026 )</p><br>
+
+                <div class="retreat-info">
+                    <p><strong>Programação e o que está incluso:</strong></p>
+
+                    <p>✨ Transporte ida e volta</p>
+                    <p>✨ Saída às 5h do Atacadão de Olinda e 5:30h da Praça do Derby</p>
+                    <p>✨ Retorno às 16h de Bonito/PE</p>
+                    <p>✨ Café da manhã</p>
+                    <p>✨ Roda dinâmica de respiração</p>
+                    <p>✨ Banho de cachoeira 💦</p>
+                    <p>✨ Aventuras: Rapel ou Tirolesa 🤩</p>
+                    <p>✨ Trilha vibe</p>
+                    <p>✨ Yoga</p>
+                    <p>✨ Almoço delicioso 😋</p>
+                    <p>✨ Meditação na gruta</p>
+                    <p>✨ Brindes, sorteios e presentinhos</p>
+                    <p>✨ Cobertura completa de imagens 📸</p>
+                </div><br>
+
+                <div class="retreat-places">
+                    <p><strong>Por onde vamos passar:</strong></p>
+                    <p>🌿 Cachoeira Véu da Noiva 1</p>
+                    <p>🌿 Cachoeira Pedra Redonda</p>
+                    <p>🌿 Pôr do sol no Mirante</p>
+                </div><br>
+
+                <div class="retreat-extra">
+                    <p><strong>O que não está incluso:</strong></p>
+                    <p>❌ Bebidas no almoço</p>
+                    <p>❌ Bebidas no pôr do sol</p>
+                </div><br>
+
+                <div class="retreat-audience">
+                    <p><strong>Quem pode participar?</strong></p>
+                    <p>
+                        Quem sentir o chamado! Qualquer pessoa, praticante ou não de Yoga,
+                        pode participar! Vai ser MUITO feliz com a gente 💙
+                    </p>
+                </div><br>
+
+                <div class="retreat-price">
+                    <p><strong>💰 Valor: R$ 519,90</strong></p>
+                    <p>Pagamento via PIX ou cartão (com acréscimo da maquineta)</p>
+                    <p><strong>15 vagas disponíveis</strong></p>
+                </div><br>
+
+                <a href="#contato" class="btn-retreat">
+                    Bora ser feliz? 💙
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Retiro de Yoga Section
+    <section class="section retreat" id="retiro">
+        <div class="container">
+            <h1 class="retreat-content fade-in">
+                Viagem – Salvador - BA
+            </h1><br>
+
+            <div class="retreat-content fade-in">
+
+                <p>Retiro de Yoga & Festa de Iemanjá – Salvador - BA</p>
+                <p class="retreat-date"><strong>30 de jan a 3 de fev</strong></p>
+
+                <p>
+                    Eu vou levar um pequeno grupo para viver uma das experiências mais bonitas e espirituais do Brasil:
+                    <strong>a Festa de Iemanjá, em Salvador.</strong>
+                </p>
+
+                <p class="highlight">
+                    Não é excursão.<br>
+                    Não é turismo.<br>
+                    É uma vivência.
+                </p><br>
+
+                <div class="retreat-benefits">
+                    <p>✨ yoga ao nascer do sol</p>
+                    <p>✨ banho de mar</p>
+                    <p>✨ ritual de oferendas</p>
+                    <p>✨ meditação e conexão</p>
+                    <p>✨ passeio cultural por Salvador</p>
+                    <p>✨ roda de conversa e integração</p>
+                    <p>✨ amanhecer entregando flores para o mar no dia de Iemanjá</p>
+                </div><br>
+
+                <p>
+                    Uma viagem para desacelerar, se reconectar e voltar diferente.
+                </p><br>
+
+                <p class="group-size">
+                    Grupo pequeno (8 a 10 pessoas)
+                </p>
+
+                <p>
+                    Se você sente o chamado do mar, aceita com carinho, coração aberto e vem!
+                </p>
+
+                <div class="retreat-info">
+                    <p><strong>Incluso:</strong> hospedagem, café da manhã, almoço e todas as experiências do retiro.
+                    </p>
+                    <p><strong>Passagem aérea:</strong> não inclusa (com acompanhamento completo na compra ✈️)</p><br>
+                </div>
+
+                <div class="retreat-price">
+                    <p><strong>💰 Investimento (1º lote): R$ 2.190</strong></p>
+                    <p>Pode parcelar ✅</p><br>
+                    <p><strong>Reserva:</strong> R$ 190</p>
+                </div><br>
+
+                <a href="#contato" class="btn-retreat">
+                    Quero participar 💙
+                </a>
+
+            </div>
+        </div>
+    </section>-->
+
+
+    <!-- Footer -->
+    <!-- Location Section -->
+    <section class="section location-section" id="localizacao">
+        <div class="container">
+            <h2 class="section-title fade-in">Localização</h2>
+            <div class="location-grid fade-in">
+                <div class="location-info">
+                    <div class="address-card">
+                        <!--<div class="address-icon"><i class="fas fa-map-marker-alt"></i></div>-->
+                        <div class="address-details">
+                            <h3>📍 Estamos localizados na:</h3>
+                            <p>Galeria Ana Maria</p>
+                            <p>R. Manoel Graciliano de Souza, 1020 - Sala 8</p>
+                            <p>Jardim Atlântico, Olinda - PE</p>
+                            <p>Em Jardim Atlântico, perto do colégio Souza Leão.</p>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=-7.971541434515129,-34.8372901"
+                        target="_blank" class="btn-primary"
+                        style="display: inline-block; margin-top: 1.5rem; text-align: center;">
+                        <i class="fas fa-external-link-alt"></i> Ver no Google Maps
+                    </a><br><br>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.346387034447!2d-34.83947872412803!3d-7.971541434515129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNTgnMTcuNiJTIDM0wrA1MCcxNC4xIlc!5e0!3m2!1spt-BR!2sbr!4v1711650000000!5m2!1spt-BR!2sbr"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <img src="assets/logo_footer.png" alt="Transbordar Logo" class="footer-logo-img">
+                </div>
+                <p class="footer-description">
+                    Dedicado a oferecer equilíbrio corpo e mente através da prática do yoga, buscando sempre a
+                    melhor conexão e bem-estar para cada aluno.
+                </p>
+                <div class="social-icons">
+                    <!-- <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a> -->
+                    <!-- <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a> -->
+                    <!-- <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a> -->
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Atalhos</h3>
+                <ul class="footer-links">
+                    <li><a href="#inicio"><i class="fas fa-chevron-right"></i> Início</a></li>
+                    <li><a href="#professores"><i class="fas fa-chevron-right"></i> Professores</a></li>
+                    <li><a href="#aulas"><i class="fas fa-chevron-right"></i> Aulas</a></li>
+                    <li><a href="#story"><i class="fas fa-chevron-right"></i> Loja</a></li>
+                    <li><a href="#localizacao"><i class="fas fa-chevron-right"></i> Localização</a></li>
+                    <li><a href="#depoimentos"><i class="fas fa-chevron-right"></i> Depoimentos</a></li>
+                    <li><a href="#contato"><i class="fas fa-chevron-right"></i> Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h3 class="footer-title">Contato</h3>
+                <div class="contact-info">
+                    <p><i class="far fa-envelope"></i> yogatransbordar@gmail.com</p>
+                    <p><i class="fab fa-whatsapp"></i> +55 81 9 8222-8973</p>
+                    <p><i class="fab fa-instagram"></i> @transbordaryogaestudio</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Desenvolvido por <a href="http://www.patrickataide.com.br"
+                        target="_blank">www.patrickataide.com.br</a></p>
+                <p>Automação e Desenvolvimento Empresarial.</p>
+                <p><a href="https://wa.me/5581989304727?text=Vim%20do%20site%20www.transbordaryoga.com.br%2C%20quero%20fazer%20meu%20site."
+                        target="_blank">Contato - 55 81 98930-4727 <i class="fab fa-whatsapp"></i></a></p>
+                <div class="footer-copy">
+                    &copy; 2026 Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Widget -->
+    <div id="whatsapp-widget" class="whatsapp-widget">
+        <div id="whatsapp-popup" class="whatsapp-popup">
+            <div class="whatsapp-popup-header">
+                <p>Olá! Clique aqui e um de nossos representantes entrará em contato com você o mais breve
+                    possível.
+                </p>
+                <button id="whatsapp-close" class="whatsapp-close">&times;</button>
+            </div>
+            <div class="whatsapp-popup-body" id="whatsapp-body">
+                <div class="whatsapp-logo-container">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="whatsapp-text">
+                    <span class="whatsapp-brand-small">Transbordar Estúdio</span>
+                    <span class="whatsapp-brand-bold">Fale conosco !</span>
+                </div>
+            </div>
+        </div>
+        <button id="whatsapp-btn" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Converse via WhatsApp
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
