@@ -1023,7 +1023,7 @@ header.scrolled {
 /* Retiro Section com imagem de fundo */
 .retreat {
   position: relative;
-  background: url('assets/Cachoeira_em_Bonito_-_PE_Brasil.jpg') center/cover no-repeat;
+  background: url('assets/yoga.jpg') center/cover no-repeat;
   padding: 120px 0;
   color: white;
 }
@@ -1066,7 +1066,7 @@ header.scrolled {
   /* Retiro Section com imagem de fundo */
   .retreat {
     position: relative;
-    background: url('assets/Cachoeira_em_Bonito_-_PE_Brasil.jpg') center/cover no-repeat;
+    background: url('assets/yoga.jpg') center/cover no-repeat;
     padding: 120px 0;
     color: white;
   }
